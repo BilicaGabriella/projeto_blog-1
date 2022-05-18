@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --black: #212121;
+    --charcoal: #323232;
+    --prismarine: #0D7377;
+    --teal: #14FFEC;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    background: var(--black);
+}
+
+body, button, input, select, textarea {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+}
+
+h1, h2 {
+    margin: 0;
+    font-weight: 400;
+}
+
+p {
+    /* Sou um desenvolvedor amador de aplicações que às vezes funcionam. */
+
+    font-size: 20px;
+    line-height: 23px;
+    text-align: justify;
+}
+
+button {
+    background: var(--prismarine);
+    border: 0;
+    border-radius: 15px;
+    padding: 8px 32px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+header {
+    /* background: red; */
+    height: calc(100vh - 65px);
+    display: flex;
+    align-items: center;
+}
+
+header .container {
+    width: 50%;
+    height: fit-content;
+    padding: 0 100px;
+}   
+
+header .container h1 {
+    color: var(--teal);
+    font-size: 48px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+    padding: 0 100px;
+    position: sticky;
+    top: 0;
+}
+
+nav ul a {
+    color: var(--teal);
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0 35px;
+}
+
+nav img {
+    height: 26px;
+}
+
