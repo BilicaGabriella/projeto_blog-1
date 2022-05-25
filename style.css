@@ -64,6 +64,10 @@ header .container h1 {
     font-size: 48px;
 }
 
+header .container img{
+    display: none;  
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -85,3 +89,46 @@ nav img {
     height: 26px;
 }
 
+section{
+    background: purple;
+    height: 1000px;
+}
+
+@media (max-width:767px) {
+    header .container{
+        width: 100%;
+    }
+
+    header .container img{
+        display: inline;
+        height: 55px;
+        margin-bottom: 75px;
+    }
+
+    nav img{
+        display: none;
+    }
+} 
+
+@media (max-width: 480px) {
+    header .container {
+        padding: 0 40px;
+    }
+
+    nav {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        top: unset;
+        padding: 0 15px;
+    }
+
+    nav ul a {
+        font-size: 12px;
+    }
+
+    nav ul a svg {
+        display: block;
+        margin: 0 auto;
+    }
+}
