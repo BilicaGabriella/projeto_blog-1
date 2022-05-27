@@ -5,6 +5,7 @@
     --charcoal: #323232;
     --prismarine: #0D7377;
     --teal: #14FFEC;
+    --purple: #5280e2;
 }
 
 * {
@@ -30,14 +31,14 @@ h1, h2 {
 
 p {
     /* Sou um desenvolvedor amador de aplicações que às vezes funcionam. */
-
     font-size: 20px;
     line-height: 23px;
     text-align: justify;
 }
 
 button {
-    background: var(--prismarine);
+    /* Entre em contato */
+    background: var(--purple);
     border: 0;
     border-radius: 15px;
     padding: 8px 32px;
@@ -64,8 +65,14 @@ header .container h1 {
     font-size: 48px;
 }
 
-header .container img{
+/* Para não aparecer o logo quando for desktop */
+header .container img {
     display: none;  
+}
+
+header .container button {
+    /* Entre em contato */
+    margin-top: 40px;
 }
 
 nav {
@@ -78,6 +85,10 @@ nav {
     top: 0;
 }
 
+nav img {
+    height: 26px;
+}
+
 nav ul a {
     color: var(--teal);
     font-size: 20px;
@@ -85,15 +96,39 @@ nav ul a {
     margin: 0 35px;
 }
 
-nav img {
-    height: 26px;
+nav ul a svg {
+    display: none;
 }
 
-section{
-    background: purple;
-    height: 1000px;
+.about-me {
+    display: flex;
+    padding: 100px;
 }
 
+.about-me .container {
+    width: 50%;
+    padding-right: 50px;
+}
+
+.about-me .img-container {
+    width: 50%;
+    text-align: center;
+}
+
+.about-me .img-container img {
+    width: 70%;
+}
+
+/* Melhora a resposividade retirando a margim do 'nav ul a', pois a margim atrapalha quebrando muito facil */
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Responsividade */
+
+/* Suporte para tablets */
 @media (max-width:767px) {
     header .container{
         width: 100%;
@@ -110,6 +145,7 @@ section{
     }
 } 
 
+/* Suporte para celulares com tela abaixo de 480px */
 @media (max-width: 480px) {
     header .container {
         padding: 0 40px;
@@ -129,6 +165,6 @@ section{
 
     nav ul a svg {
         display: block;
-        margin: 0 auto;
+        margin: 0 auto 10px;
     }
 }
