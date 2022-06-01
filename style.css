@@ -6,6 +6,7 @@
     --prismarine: #0D7377;
     --teal: #14FFEC;
     --purple: #5280e2;
+    --green: #15cdcb;
 }
 
 * {
@@ -83,6 +84,7 @@ nav {
     padding: 0 100px;
     position: sticky;
     top: 0;
+    background-color: var(--charcoal);
 }
 
 nav img {
@@ -113,10 +115,27 @@ nav ul a svg {
 .about-me .img-container {
     width: 50%;
     text-align: center;
+    position: relative;
 }
 
 .about-me .img-container img {
     width: 70%;
+    height: 100%;
+}
+
+.about-me .img-container .line {
+    width: calc(70% + 50px);
+    height: calc(100% + 50px);
+    border: 1px solid var(--purple);
+
+    position: absolute;
+    top: -25px;
+    left: calc(50% - 70%/2 - 25px);
+}
+
+.about-me .img-container .line.green {
+    transform: rotate(-4.3deg);
+    border-color: var(--green);
 }
 
 /* Melhora a resposividade retirando a margim do 'nav ul a', pois a margim atrapalha quebrando muito facil */
