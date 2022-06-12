@@ -183,8 +183,8 @@ nav ul a svg {
 .servicos .servicos-container .retangulo-servico svg {
     margin-bottom: 40px;
     color: var(--teal);
-    height: 80px;
-    width: 100px;
+    height: 60px;
+    width: 80px;
 }
 
 .servicos .servicos-container .retangulo-servico p {
@@ -244,6 +244,10 @@ nav ul a svg {
 .contato h1 {
     width: fit-content;
     margin: 0 auto 40px;
+}
+
+.contato p {
+    text-align: center;
 }
 
 .contato button {
