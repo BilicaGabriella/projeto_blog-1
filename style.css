@@ -156,7 +156,7 @@ nav ul a svg {
     padding: 0 100px;
 }
 
-.servicos-container, .portfolio-container {
+.servicos-container {
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
@@ -192,9 +192,42 @@ nav ul a svg {
     font-size: 24px;
 }
 
-/* .retangulo-servico + .retangulo-servico {
-    margin-left: 10px;
-} */
+.curriculo {
+    text-align: center;
+    padding: 0 100px;
+}
+
+.curriculo .container {
+    max-width: 1200px;
+    display: flex;
+    margin: 50px auto;
+}
+
+.curriculo .container .conteudo {
+    width: 100%;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.curriculo .container .curriculo-img {
+    width: 50%;
+    text-align: center;
+    position: relative;
+}
+
+.curriculo .container .conteudo .curriculo-text {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 150px auto;
+    margin-bottom: 50px;
+}
+
+.curriculo .curriculo-text {
+    font-size: 16px;
+}
 
 /* Melhora a resposividade retirando a margim do 'nav ul a', pois a margim atrapalha quebrando muito facil */
 nav ul {
