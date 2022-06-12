@@ -181,7 +181,7 @@ nav ul a svg {
     margin-bottom: 40px;
     color: var(--teal);
     height: 80px;
-    width: 120px;
+    width: 100px;
 }
 
 .servicos .servicos-container .retangulo-servico p {
@@ -229,6 +229,35 @@ nav ul a svg {
 
 .curriculo .curriculo-text {
     font-size: 16px;
+}
+
+.contato {
+    max-width: 700px;
+    margin: 150px auto 70px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.contato h1 {
+    width: fit-content;
+    margin: 0 auto 40px;
+}
+
+.contato button {
+    margin: 40px auto;
+}
+
+.contato .social-media {
+    max-width: 360px;
+    margin: 50px auto 0;
+    justify-content: space-around;
+    display: flex;
+}
+
+.contato .social-media svg {
+    color: var(--teal);
+    height: 40px;
+    width: 50px;
 }
 
 /* Melhora a resposividade retirando a margim do 'nav ul a', pois a margim atrapalha quebrando muito facil */
