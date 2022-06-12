@@ -177,9 +177,11 @@ nav ul a svg {
     text-align: center;
 }
 
-.servicos .servicos-container .retangulo-servico img {
+.servicos .servicos-container .retangulo-servico svg {
     margin-bottom: 40px;
-    width: 90px;
+    color: var(--teal);
+    height: 80px;
+    width: 120px;
 }
 
 .servicos .servicos-container .retangulo-servico p {
