@@ -97,6 +97,9 @@ nav {
     position: sticky;
     top: 0;
     background-color: var(--charcoal);
+    
+    z-index: 1;
+    /* para o nav sobrepor todos os outros elementos */
 }
 
 nav img {
@@ -214,7 +217,7 @@ nav ul a svg {
     flex-direction: column;
 }
 
-.curriculo .container .curriculo-img {
+.curriculo .container img {
     width: 50%;
     text-align: center;
     position: relative;
