@@ -181,10 +181,12 @@ nav ul a svg {
 }
 
 .servicos .servicos-container .retangulo-servico svg {
+    position: relative;
     margin-bottom: 40px;
     color: var(--teal);
-    height: 60px;
-    width: 80px;
+    height: 40px;
+    width: 60px;
+    top: calc(50% - 20px); /* para centralizar o svg dentro do circulo */
 }
 
 .servicos .servicos-container .retangulo-servico p {
@@ -194,7 +196,16 @@ nav ul a svg {
 }
 
 .servicos .servicos-container .retangulo-servico h2 {
+    margin-top: 10%;
+    /* padding-top: 10%; */
     font-size: 24px;
+}
+
+.servicos .servicos-container .retangulo-servico .circle-container {
+    border-radius: 40px;
+    height: 80px;
+    width: 80px;
+    background-color: var(--black);
 }
 
 .curriculo {
@@ -265,6 +276,12 @@ nav ul a svg {
     color: var(--teal);
     height: 40px;
     width: 50px;
+}
+
+footer p {
+    text-align: center;
+    color: lightgrey;
+    font-size: 18px;
 }
 
 /* Melhora a resposividade retirando a margim do 'nav ul a', pois a margim atrapalha quebrando muito facil */
