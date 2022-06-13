@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root{
+    --teal: #14FFEC;
     --black: #212121;
     --charcoal: #323232;
-    --prismarine: #0D7377;
-    --teal: #14FFEC;
     --purple: #5280e2;
     --green: #15cdcb;
 }
@@ -31,14 +30,12 @@ h1, h2 {
 }
 
 p {
-    /* Sou um desenvolvedor amador de aplicações que às vezes funcionam. */
     font-size: 20px;
     line-height: 23px;
     text-align: justify;
 }
 
 button {
-    /* Entre em contato */
     background: var(--purple);
     border: 0;
     border-radius: 15px;
@@ -56,35 +53,27 @@ button {
 
 /* muda a fonte dos h1 com a classe 'title-green' */
 .title-green {
-    color: var(--green);
+    color: var(--teal);
     font-size: 48px;
 }
 
 header {
-    /* background: red; */
     height: calc(100vh - 65px);
     display: flex;
     align-items: center;
 }
 
 header .container {
-    width: 50%;
     height: fit-content;
     padding: 0 100px;
-}   
-
-header .container h1 {
-    color: var(--teal);
-    font-size: 48px;
 }
 
-/* Para não aparecer o logo quando for desktop */
+/* remove a logo quando for desktop */
 header .container img {
     display: none;  
 }
 
 header .container button {
-    /* Entre em contato */
     margin-top: 40px;
 }
 
@@ -99,7 +88,7 @@ nav {
     background-color: var(--charcoal);
     
     z-index: 1;
-    /* para o nav sobrepor todos os outros elementos */
+    /* sobrepor todos os outros elementos */
 }
 
 nav img {
@@ -186,7 +175,9 @@ nav ul a svg {
     color: var(--teal);
     height: 40px;
     width: 60px;
-    top: calc(50% - 20px); /* para centralizar o svg dentro do circulo */
+
+    /* centralizar o svg dentro do circulo */
+    top: calc(50% - 20px);
 }
 
 .servicos .servicos-container .retangulo-servico p {
@@ -197,7 +188,6 @@ nav ul a svg {
 
 .servicos .servicos-container .retangulo-servico h2 {
     margin-top: 10%;
-    /* padding-top: 10%; */
     font-size: 24px;
 }
 
@@ -284,14 +274,14 @@ footer p {
     font-size: 18px;
 }
 
-/* Melhora a resposividade retirando a margim do 'nav ul a', pois a margim atrapalha quebrando muito facil */
+/* <------------- Responsividade -------------> */
+
+/* retira a margim do 'nav ul a', pois ela atrapalha quebrando muito facil */
 nav ul {
     width: 100%;
     display: flex;
     justify-content: space-around;
 }
-
-/* Responsividade */
 
 /* Suporte para tablets */
 @media (max-width:767px) {
@@ -310,7 +300,7 @@ nav ul {
     }
 } 
 
-/* Suporte para celulares com tela abaixo de 480px */
+/* Suporte para celulares (com tela abaixo de 480px) */
 @media (max-width: 480px) {
     header .container {
         padding: 0 40px;
